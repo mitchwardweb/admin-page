@@ -1,0 +1,260 @@
+:root{
+    --header-font: 'IBM Plex Sans Condensed', sans-serif;
+    --main-font: 'IBM Plex Sans', sans-serif;
+    --main-font-color: rgb(115, 115, 115);
+    --main-color: #e2e8f0;
+    --secondary-color: #60a5fa;
+    --accent-color: #facc15;
+    --main-color-light: #f3f4f6
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--main-font);
+}
+
+h3{
+    margin-bottom: .5rem;
+    font-size: 1rem;
+    font-family: var(--header-font);
+}
+
+h5{
+    font-family: var(--header-font);
+    font-size: .9rem;
+    margin-bottom: .1rem;
+}
+
+h6{
+    font-weight: 500;
+}
+
+.shadow{
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.admin-wrapper{
+    background-color: var(--main-color);
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: 
+    'sidebar header'
+    'sidebar main';
+}
+
+.sidebar {
+    background-color: var(--secondary-color);
+    grid-area: sidebar;
+    display: grid;
+    grid-template: repeat(3, min-content) / 1fr;
+    align-items: start;
+    gap: 30px;
+    padding: 1rem;
+    color: var(--main-color-light);
+}
+
+.sidebar ul{
+    list-style-type: none;
+}
+
+.sidebar li{
+    margin-bottom: 1rem;
+}
+
+.sidebar a{
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.logo{
+    display: flex;
+}
+
+.s-menu-logo {
+    height: 1rem;
+    filter: invert(100%);
+    margin-right: .5rem
+}
+
+.main-logo{
+    height: 2rem;
+}
+
+.header{
+    background-color: var(--main-color-light);
+    grid-area: header;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 3fr 2fr;
+    box-shadow: 0px 10px 20px -20px rgba(0,0,0,0.45);
+    padding: .5rem 1.5rem;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    padding-right: 2rem;
+}
+
+.search form{
+    display: flex;
+    width: 100%;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.search button{
+    border: none;
+    background-color: var(--main-color-light);
+}
+
+.search input[type=search]{
+    flex: 1 0 250px;
+    border-radius: 100px;
+    min-width: 200px;
+    border: none;
+    background-color: var(--main-color);
+    padding-left: 1rem;
+    overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.header-upper-right{
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    align-items: center;
+    padding-right: 1rem;
+}
+
+.header-upper-right a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-lower-right{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.user-greeting{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.post-button{
+    flex-grow: 1;
+    height: 2rem;
+    border: none;
+    background-color: var(--secondary-color);
+    color: var(--main-color-light);
+    border-radius: 100px;
+}
+
+.user-image{
+    grid-area: avatar;
+}
+
+.greeting{
+    grid-area: greeting;
+}
+
+.user-name{
+    grid-area: username;
+}
+
+.h-menu-logo {
+    height: 1rem;
+}
+
+.main{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    padding: 1rem 1rem
+}
+
+.main p{
+    font-size: .8rem;
+    color: var(--main-font-color)
+}
+
+.project-card{
+    background-color: var(--main-color-light);
+    border-left: 5px solid var(--accent-color);
+    border-radius: 5px;
+    padding: 2rem 1rem;
+}
+
+.card-buttons{
+    display: flex;
+    justify-content: end;
+}
+
+.card-buttons > img {
+    height: 1rem;
+    margin-right: .5rem
+}
+
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.main-right{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.card-column{
+    min-height: 100px;
+    background-color: var(--main-color-light);
+    border-radius: 5px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+}
+
+.announcement-content:not(:last-child){
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--main-color);
+}
+
+.announcement-content h5{
+    font-size: .8rem;
+}
+
+.main-right p{
+    font-size: 0.75rem;
+}
+
+.trending-content{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 5fr;
+}
+
+.avatar{
+     background-color: var(--accent-color);
+     overflow: hidden;
+     border-radius: 50%;
+     height: 40px;
+     width: 40px;
+}
+
+.circle-avatar{
+    background-color: var(--accent-color);
+    height: 45px;
+    border-radius: 50%;
+}

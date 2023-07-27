@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=IBM+Plex+Sans+Condensed&display=swap" rel="stylesheet">
+    <script src="admin.js" defer></script>
+    <title>TOP Admin Page</title>
+</head>
+<body>
+    <div class="admin-wrapper">
+        <div class="sidebar">
+            <div class="logo">
+                <img src="assets/view-dashboard.svg" alt="" class="s-menu-logo main-logo">
+                <h2>Dashboard</h2>
+            </div>
+            <div class="s-menu-1">
+                <ul>
+                        <li>
+                            <img class="s-menu-logo" src="assets/home.svg" alt="">
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <img class="s-menu-logo" src="assets/card-account-details-outline.svg" alt="">
+                            <a href="#">Profile</a>
+                        </li>
+                        <li>
+                            <img class="s-menu-logo" src="assets/message-badge.svg" alt="">
+                            <a href="#">Messages</a>
+                        </li>
+                        <li>
+                            <img class="s-menu-logo" src="assets/clock-time-five.svg" alt="">
+                            <a href="#">History</a>
+                        </li>
+                        <li>
+                            <img class="s-menu-logo" src="assets/note-multiple.svg" alt="">
+                            <a href="#">Tasks</a>
+                        </li>
+                        <li>
+                            <img class="s-menu-logo" src="assets/account-group.svg" alt="">
+                            <a href="#">Communities</a>
+                        </li>
+                </ul>
+            </div>
+            <div class="s-menu-2">
+                <ul>
+                    <li>
+                        <img class="s-menu-logo" src="assets/cog.svg" alt="">
+                        <a href="#">Settings</a>
+                    </li>
+                    <li>
+                        <img class="s-menu-logo" src="assets/help-box.svg" alt="">
+                        <a href="#">Support</a>
+                    </li>
+                    <li>
+                        <img class="s-menu-logo" src="assets/shield-check.svg" alt="">
+                        <a href="#">Privacy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header">
+            <div class="search">
+                <form id="form">
+                    <button type="submit">
+                        <img class="h-menu-logo" src="assets/magnify.svg" alt="">
+                    </button>
+                    <input type="search" id="query" name="q" placeholder="Search...">
+                  </form>
+            </div>
+            <div class="header-upper-right">
+                <a href="#" class="notifcations">
+                    <img class="h-menu-logo" src="assets/message-badge.svg" alt="">
+                </a>
+                <a href="#">
+                    <img class="circle-avatar" src="assets/icons8-athlete-64.png" alt="">
+                </a>
+                <a href="#">
+                    <h5>Account Name</h5>
+                </a>
+            </div>
+            <div class="user-greeting">
+                <div class="user-image">
+                    <img src="assets/icons8-athlete-64.png" alt="" class="circle-avatar">
+                </div>
+                <div class="greeting-text">
+                    <div class="greeting">
+                        <h6>Hi there,</h6>
+                    </div>
+                    <div class="user-name">
+                        <h2>Account Name (@name)</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="header-lower-right">
+                <button class="post-button">New</button>
+                <button class="post-button">Upload</button>
+                <button class="post-button">Share</button>
+            </div>
+        </div>
+        
+        <div class="main">
+            <div class="main-left">
+                <div class="projects">
+                    <div class="card-heading">
+                        <h3>Your projects</h3>
+                    </div>
+                    <div class="card-grid">
+                        <div class="project-card shadow">
+                            <h5>Super cool project</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt modi minima omnis explicabo vel, corrupti aperiam officia cumque</p>
+                            <div class="card-buttons">
+                                <img src="assets/home.svg" alt="">
+                                <img src="assets/cog.svg" alt="">
+                                <img src="assets/clock-time-five.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="project-card shadow">
+                            <h5>Less cool project</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt modi minima omnis explicabo vel, corrupti aperiam officia cumque</p>
+                            <div class="card-buttons">
+                                <img src="assets/home.svg" alt="">
+                                <img src="assets/cog.svg" alt="">
+                                <img src="assets/clock-time-five.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="project-card shadow">
+                            <h5>Impossible app</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt modi minima omnis explicabo vel, corrupti aperiam officia cumque</p>
+                            <div class="card-buttons">
+                                <img src="assets/home.svg" alt="">
+                                <img src="assets/cog.svg" alt="">
+                                <img src="assets/clock-time-five.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="project-card shadow">
+                            <h5>Easy peasy app</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt modi minima omnis explicabo vel, corrupti aperiam officia cumque</p>
+                            <div class="card-buttons">
+                                <img src="assets/home.svg" alt="">
+                                <img src="assets/cog.svg" alt="">
+                                <img src="assets/clock-time-five.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="project-card shadow">
+                            <h5>Ad blocker</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt modi minima omnis explicabo vel, corrupti aperiam officia cumque</p>
+                            <div class="card-buttons">
+                                <img src="assets/home.svg" alt="">
+                                <img src="assets/cog.svg" alt="">
+                                <img src="assets/clock-time-five.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="project-card shadow">
+                            <h5>Money maker</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt modi minima omnis explicabo vel, corrupti aperiam officia cumque</p>
+                            <div class="card-buttons">
+                                <img src="assets/home.svg" alt="">
+                                <img src="assets/cog.svg" alt="">
+                                <img src="assets/clock-time-five.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-right">
+                <div class="announcements">
+                    <div class="card-heading">
+                        <h3>Announcements</h3>
+                    </div>
+                    <div class="card-column shadow">
+                        <div class="announcement-content">
+                            <h5>Site Maintenance</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat itaque, distinctio laboriosam excepturi eligendi iure!</p>
+                        </div>
+                        <div class="announcement-content">
+                            <h5>Community Share Day</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat itaque, distinctio laboriosam excepturi eligendi iure!</p>
+                        </div>
+                        <div class="announcement-content">
+                            <h5>Updated Privacy Policy</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat itaque, distinctio laboriosam excepturi eligendi iure!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="trending">
+                    <div class="card-heading">
+                        <h3>Trending</h3>
+                    </div>   
+                    <div class="card-column shadow">
+                        <div class="trending-content">
+                            <div class="avatar">
+                                <img class="circle-avatar" src="assets/icons8-athlete-64.png" alt="">
+                            </div>
+                            <div class="user-info">
+                                <h6>@Johhny</h6>
+                                <p>Why am I here?</p>
+                            </div>
+                        </div>
+                        <div class="trending-content"> 
+                            <div class="avatar">
+                                <img class="circle-avatar" src="assets/icons8-avatar-64 (2).png" alt="">
+                            </div>
+                            <div class="user-info">
+                                <h6>@Mitchell</h6>
+                                <p>I'd rather be at the beach</p>
+                            </div>
+                        </div>
+                        <div class="trending-content">
+                            <div class="avatar">
+                                <img class="circle-avatar" src="assets/icons8-avatar-64 (1).png" alt="">
+                            </div>
+                            <div class="user-info">
+                                <h6>@Alexander</h6>
+                                <p>Yo' I'm having a baby</p>
+                            </div>
+                        </div>
+                        <div class="trending-content">
+                            <div class="avatar">
+                                <img class="circle-avatar" src="assets/icons8-avatar-64.png" alt="">
+                            </div>
+                            <div class="user-info">
+                                <h6>@Gracie</h6>
+                                <p>What's for dinner?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
